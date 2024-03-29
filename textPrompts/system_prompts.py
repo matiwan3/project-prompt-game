@@ -1,10 +1,10 @@
-def everythingIsSetUp():
+def promptSetUp():
     print('[SYSTEM] Everything is set up. Get ready for your adventure!')
     
-def startingGame():
+def promptStartingGame():
     print('[SYSTEM] Starting the game...')
     
-def welcomePrompt():
+def promptWelcome():
     print('---------------------------------------------')
     print('|        Welcome to prompt adventures       |')
     print('|        Version 0.2-ENG                    |')

@@ -2,7 +2,7 @@
 # MIRO BOARD: https://miro.com/app/board/uXjVKavmm8k=/?share_link_id=408092236856
 from inGameQuests.quests_quizzes import mathExercise_1
 from inGameActions.actions_setup import unitSelect, setCharacterName
-from textPrompts.system_prompts import everythingIsSetUp, startingGame, welcomePrompt
+from textPrompts.system_prompts import promptSetUp, promptStartingGame, promptWelcome
         
 def main():
     # Game settings
@@ -13,12 +13,12 @@ def main():
     sounds = True
     
     while run: 
-        welcomePrompt()
+        promptWelcome()
         username = setCharacterName()
         unit = unitSelect(username)
         if unit == 0:
             break
-        everythingIsSetUp()
+        promptSetUp()
         mainGame = True
         while mainGame:
             for x in range(earlyGameDays):
@@ -38,5 +38,5 @@ def main():
         run = False
     
 if __name__ == '__main__':
-    startingGame()
+    promptStartingGame()
     main()
