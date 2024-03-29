@@ -1,8 +1,8 @@
-from components.unit_archer import UnitArcher
-from components.unit_guardian import UnitGuardian
-from components.unit_mag import UnitMag
-from components.unit_ninja import UnitNinja
-from components.unit_warrior import UnitWarrior
+from units.unit_archer import UnitArcher
+from units.unit_guardian import UnitGuardian
+from units.unit_mag import UnitMag
+from units.unit_ninja import UnitNinja
+from units.unit_warrior import UnitWarrior
 
 unitClassNameArcher = 'Archer'
 unitClassNameMag = 'Mag'

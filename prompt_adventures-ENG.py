@@ -10,11 +10,11 @@ def main():
     earlyGameDays = 5
     midGameDays = 14
     lateGameDays = 32
-    sounds = True
+    
+    promptWelcome()
+    username = setCharacterName()
     
     while run: 
-        promptWelcome()
-        username = setCharacterName()
         unit = unitSelect(username)
         if unit == 0:
             break
@@ -29,9 +29,9 @@ def main():
                 
             for z in range(lateGameDays):
                 print('Late game day ',(z + 1))
-                
-            mainGame = False
-        
+            
+            print(f"I can't believe it... YOU MADE IT YOU KILLED THE MESHISH.. Now our land is free. Thank you {username}! I hope to see you again!")
+            mainGame = False 
         # quiz_result = mathExercise_1()
         # unit.intelligence += quiz_result
         # print(f'Your current intelligence is {unit.intelligence}')
