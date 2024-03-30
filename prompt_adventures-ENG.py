@@ -43,13 +43,12 @@ def main():
             current_day += 1
             if current_day == earlyGameDays:
                 promptEarlyCompleted(username)
-                earlyGame = False 
+                earlyGame = False
                 
                 
         # quiz_result = mathExercise_1()
         # unit.intelligence += quiz_result
         # print(f'Your current intelligence is {unit.intelligence}')
-        run = False
     
 if __name__ == '__main__':
     promptStartingGame()
