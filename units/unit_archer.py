@@ -21,3 +21,6 @@ class UnitArcher:
             'tool': self.tool,
             'gold': self.gold
         }
+    
+    def geGold(self):
+        print(f'Gold: {self.gold}')
