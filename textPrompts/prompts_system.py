@@ -7,7 +7,7 @@ def promptStartingGame():
 def promptWelcome():
     print('\n---------------------------------------------')
     print('|        Welcome to prompt adventures       |')
-    print('|        Version 0.2-ENG                    |')
+    print('|        Version 0.3-ENG                    |')
     print('|        All rights reserved by matiwan     |')
     print('---------------------------------------------\n')
     
