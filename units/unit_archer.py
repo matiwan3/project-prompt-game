@@ -22,5 +22,5 @@ class UnitArcher:
             'gold': self.gold
         }
     
-    def geGold(self):
+    def getGold(self):
         print(f'Gold: {self.gold}')

@@ -1,4 +1,5 @@
 from random import randint
+
 CUPS = 0
 
 def printCupsTable():
@@ -13,7 +14,8 @@ def tavern():
     CUPS = int(input('[T] > Welcome to tavern. Now you will play "fake-cups" game. The MORE cups you choose to play with the GREATER reward you will get. Only one cup contains a reward.\n[T] > Choose how many cups you want in the game: '))
     
     winning_cup = randint(1,CUPS)
-    
+    win_chance = int((1 / CUPS) * 100)
+
     # Debug
     print(winning_cup)
     print(f'[T] > Winning chances: {win_chance}%')
@@ -22,10 +24,9 @@ def tavern():
         
     guess_cup = int(input("\n[T] > Guess a cup: "))
     print(f'Cups: {CUPS}')
-    win_chance = 1 / CUPS
     
     reward = calculateReward(CUPS)
-    
+
     if guess_cup == winning_cup:
         print(f'[T] > Congratulations - cup number "{guess_cup}" wins. You get {reward} gold!')
         return guess_cup,reward

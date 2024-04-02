@@ -40,6 +40,7 @@ def main():
                 elif menuAction == '2':
                     elixir_point -= 1
                     terminalClear()
+                    unit.getGold()
                     tavern()
                     remainingElixir(elixir_point)
                 elif menuAction == '3':
